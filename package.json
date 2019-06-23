@@ -6,7 +6,8 @@
 	"scripts": {
 		"start": "nodemon --exec babel-node index.js",
 		"build": "babel src --out-dir dist",
-		"serve": "node index.js"
+		"serve": "node index.js",
+		"web": "nodemon --exec babel-node oauth/index.js"
 	},
 	"keywords": [
 		"discord",
