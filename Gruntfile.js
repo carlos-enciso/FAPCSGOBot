@@ -8,7 +8,10 @@ module.exports = function (grunt) {
 				src: [
 					'package.json',
 					'*.js',
-					'lib/*.js'
+					'lib/*.js',
+					'oauth/*.js',
+					'oauth/*.html',
+					'utils/*.js'
 				]
 			},
 			options: {
@@ -17,7 +20,7 @@ module.exports = function (grunt) {
 			}
 		},
 		eslint: {
-			target: ['*.js', 'lib/*.js']
+			target: ['*.js', 'lib/*.js', 'oauth/*.js', 'oauth/*.html', 'utils/*.js']
 		}
 	});
 
